@@ -1,0 +1,466 @@
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta http-equiv="X-UA-Compatible" content="ie=edge" />
+    <title>Wisdom Academy</title>
+    <!-- <link
+      rel="stylesheet"
+      href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css"
+    /> -->
+    <style>
+      /* section 1 */
+      * {
+        margin: 0;
+      }
+      .img-container {
+        width: 100%;
+        -webkit-background-size: cover;
+        -moz-background-size: cover;
+        -o-background-size: cover;
+        background-size: cover;
+        background-position: 40% 0;
+        overflow-y: hidden;
+      }
+      .inner-container {
+        text-align: center;
+        position: relative;
+        width: 100%;
+        top: 30%;
+      }
+
+      /* section 2 */
+      .headline-text {
+        font-family: Lato, sans-serif;
+        color: rgb(255, 255, 255);
+        font-size: 37px;
+        line-height: 44px;
+        font-weight: 700;
+        letter-spacing: -0.5px;
+      }
+
+      .darkblue {
+        padding-top: 60px;
+        padding-bottom: 60px;
+        background-color: #233c6e;
+      }
+
+      .left {
+        float: left;
+        width: 50%;
+      }
+      .right {
+        float: right;
+        width: 50%;
+      }
+      .split-group:after {
+        content: "";
+        display: table;
+        clear: both;
+      }
+      img {
+        max-width: 100%;
+        height: auto;
+      }
+      @media screen and (max-width: 480px) {
+        .left,
+        .right {
+          float: none;
+          width: auto;
+        }
+      }
+
+      /*  footer */
+      .section {
+        display: block;
+        padding-top: 100px;
+        padding-bottom: 100px;
+        background-color: rgb(255, 255, 255);
+      }
+      .section.footer {
+        padding-top: 70px;
+        padding-bottom: 40px;
+        background-color: #0c0e1a; /*--rgb(20, 19, 28); */
+      }
+      .footer-div {
+        display: flex;
+        width: 40%;
+        margin-right: auto;
+        margin-left: auto;
+        -webkit-box-orient: horizontal;
+        -webkit-box-direction: normal;
+        flex-direction: row;
+        -webkit-box-pack: justify;
+        justify-content: space-between;
+      }
+      a {
+        background-color: transparent;
+      }
+      a:active,
+      a:hover {
+        outline: 0px;
+      }
+      .w-inline-block {
+        max-width: 100%;
+        display: inline-block;
+      }
+      a {
+        color: rgb(187, 19, 51);
+        text-decoration: none;
+      }
+      .footer-icon {
+        height: auto;
+      }
+      .footer-icon.w--current {
+        margin-right: 20px;
+      }
+      img {
+        border: 0px;
+        max-width: 100%;
+        vertical-align: middle;
+        display: inline-block;
+      }
+      .footer-list {
+        display: flex;
+        -webkit-box-orient: vertical;
+        -webkit-box-direction: normal;
+        flex-direction: column;
+      }
+      .footer-header {
+        margin-bottom: 10px;
+        padding-top: 4px;
+        padding-bottom: 4px;
+        font-family: Lato, sans-serif;
+        color: rgb(172, 178, 204);
+        font-size: 18px;
+        line-height: 20px;
+        font-weight: 400;
+        letter-spacing: 0.3px;
+        text-transform: none;
+      }
+      .footer-header:active {
+        opacity: 0.8;
+      }
+      .footer-link {
+        padding-top: 4px;
+        padding-bottom: 4px;
+        font-family: Lato, sans-serif;
+        color: rgb(112, 116, 134);
+        font-size: 14px;
+        line-height: 20px;
+        font-weight: 700;
+        letter-spacing: 0.3px;
+        text-decoration: none;
+        text-transform: none;
+      }
+      .footer-link:hover {
+        color: rgb(162, 173, 190);
+      }
+      .footer-link:active {
+        opacity: 0.8;
+      }
+      .body-copy {
+        /* width: 100%; */
+        margin-top: 14px;
+        font-family: Lato, sans-serif;
+        color: rgb(56, 54, 81);
+        font-size: 17px;
+        line-height: 30px;
+        font-weight: 400;
+      }
+      .body-copy.footnote {
+        margin-top: 40px;
+        color: rgb(85, 89, 109);
+        font-size: 14px;
+        text-align: center;
+      }
+      @media (max-width: 767px) {
+        .section {
+          padding-top: 80px;
+          padding-bottom: 80px;
+        }
+      }
+      @media (max-width: 479px) {
+        .section {
+          padding-top: 60px;
+          padding-bottom: 60px;
+        }
+      }
+      @media (max-width: 991px) {
+        .footer-div {
+          width: 60%;
+          -webkit-box-orient: horizontal;
+          -webkit-box-direction: normal;
+          flex-direction: row;
+          -webkit-box-pack: justify;
+          justify-content: space-between;
+          -webkit-box-align: stretch;
+          align-items: stretch;
+        }
+      }
+      @media (max-width: 479px) {
+        .footer-div {
+          width: 80%;
+          -webkit-box-orient: vertical;
+          -webkit-box-direction: normal;
+          flex-direction: column;
+          -webkit-box-align: center;
+          align-items: center;
+        }
+      }
+      @media (max-width: 991px) {
+        .footer-icon {
+          margin-top: 6px;
+        }
+      }
+      @media (max-width: 479px) {
+        .footer-list {
+          margin-top: 40px;
+          -webkit-box-align: center;
+          align-items: center;
+        }
+      }
+      @media (max-width: 991px) {
+        .footer-header {
+          display: block;
+          transition: background-color 400ms ease 0s, opacity 400ms ease 0s,
+            color 400ms ease 0s;
+          text-align: left;
+        }
+      }
+
+      @media (max-width: 991px) {
+        .footer-link {
+          display: block;
+          transition: background-color 400ms ease 0s, opacity 400ms ease 0s,
+            color 400ms ease 0s;
+        }
+      }
+
+      @media (max-width: 479px) {
+        .footer-list {
+          margin-top: 40px;
+          -webkit-box-align: center;
+          align-items: center;
+        }
+      }
+      @media (max-width: 991px) {
+        .footer-header {
+          display: block;
+          transition: background-color 400ms ease 0s, opacity 400ms ease 0s,
+            color 400ms ease 0s;
+          text-align: left;
+        }
+      }
+      @media (max-width: 767px) {
+        .body-copy {
+          /* width: 100%; */
+        }
+      }
+      @media (max-width: 479px) {
+        .body-copy {
+          line-height: 28px;
+        }
+      }
+      @media (max-width: 479px) {
+        .body-copy.footnote {
+          padding-right: 10px;
+          padding-left: 10px;
+          line-height: 20px;
+        }
+      }
+      /* footer end */
+      
+      /* section 4 */
+      .button {
+        margin-right: 40px;
+        margin-left: 40px;
+        padding: 12px 25px;
+        border-radius: 0px;
+        background-color: #0e4eca;
+        transition: background-color 400ms ease 0s, opacity 400ms ease 0s;
+        color: rgb(255, 255, 255);
+        font-size: 14px;
+        line-height: 20px;
+        letter-spacing: 0.5px;
+        text-decoration: none;
+        text-transform: none;
+      }
+      .button.no-padding {
+        margin-top: 40px;
+        margin-right: auto;
+        margin-left: auto;
+        -webkit-transition: background-color 400ms ease, opacity 400ms ease;
+        transition: background-color 400ms ease, opacity 400ms ease;
+        font-family: Lato, sans-serif;
+        font-size: 15px;
+        font-weight: 700;
+        letter-spacing: 0px;
+      }
+      .feature-text.white {
+        color: #fff;
+      }
+      .feature-text.center {
+        width: 100%;
+        margin-right: auto;
+        margin-left: auto;
+        text-align: center;
+      }
+      .feature-text {
+        width: 40%;
+        font-family: Lato, sans-serif;
+        color: #383651;
+        font-size: 50px;
+        line-height: 56px;
+        font-weight: 700;
+        text-align: left;
+        letter-spacing: -0.5px;
+      }
+      @media (max-width: 479px) {
+        .feature-text {
+          color: #fff;
+          font-size: 40px;
+          line-height: 48px;
+          text-align: center;
+        }
+      }
+
+      /* why wisdom */
+      .txtRglr {
+        font-size: 1.2rem;
+        color: #000;
+      }
+    </style>
+  </head>
+  <body>
+    <div
+      style="z-index: 9997;background: #182c48;position: fixed;top: 0;width: 100%;padding: 4px;display: inline-block;box-shadow: 0 4px 6px #283f6b;"
+    ></div>
+    <!-- landing page -->
+    <div
+      class="img-container"
+      style="background-image: url(https://wisdomacademy.co.in/wp-content/uploads/2017/03/3.jpg); height: 90%;"
+    >
+      <div class="inner-container" style="color: blue;">
+        <div>Welcome to</div>
+        <h2>Wisdom Academy</h2>
+        <a class="btn" href="#"></a>
+      </div>
+    </div>
+    <!-- section-2-start -->
+    <div class="split-group darkblue">
+      <div class="left">
+        <p class="headline-text" style="margin-top:20%; padding: 10px;">
+          Premier Educational Home Tutors and Group Tuitions in Mumbai- IGCSE /
+          A LEVEL/ IBDP
+        </p>
+      </div>
+      <div class="right">
+        <img
+          src="https://www.oltify.com/wp-content/uploads/2019/11/ib-test-frame.png"
+        />
+      </div>
+    </div>
+    <!-- section 2 end -->
+
+    <!-- section-2-start -->
+    <div class="split-group ">
+      <div
+        style="width: 100%; text-align: center; margin-top: 2rem; margin-bottom: 4rem; font-size: 1.8rem; color: #223c6e; text-shadow: 7px 0px 13px rgba(0,0,0,0.3);
+        "
+      >
+        Why Wisdom Academy?
+      </div>
+      <div class="left">
+        <img
+          style=""
+          src="https://www.oltify.com/wp-content/uploads/2019/11/wisdom-badge.png"
+        />
+      </div>
+      <div class="right">
+        <div
+          class="txtRglr"
+          style=" padding: 5px;
+          margin: 0 auto;
+          text-align: left;
+          margin-top: 1.5rem;
+          color: #55596d; font-family: Lato, sans-serif;"
+        >
+          We at Wisdom Academy are in the education field for the past 15 years,
+          and, with the experience, perseverance, and dedication of an esteemed
+          panel of teachers, we are proud to have produced many top ranking
+          students. <br /><br />
+          We aspire to be a one-stop shop for all students needs.
+          <br /><br />
+          Courses such as IB/ IGCSE/A LEVEL are tough, requires tremendous
+          preparation and commitment. Most students therefore, in order to get
+          that extra edge, seek professional guidance by way of private
+          coaching.
+        </div>
+      </div>
+    </div>
+    <!-- section 2 end -->
+
+    <div
+      class="img-container"
+      style="background-image: url(https://www.oltify.com/wp-content/uploads/2019/11/ptrn.jpg);height: 60%;"
+    >
+      <div class="inner-container">
+        <p class="feature-text center white">
+          Tell us your specific Tuition Requirement
+        </p>
+        <a href="/" class="button no-padding w-inline-block"
+          ><div class="bold-text">Request Personalised..</div></a
+        >
+      </div>
+    </div>
+
+    <!-- footer-start-->
+    <div class="section footer">
+      <div class="footer-div">
+        <a href="/" class="footer-icon w-inline-block w--current"
+          ><img
+            src="http://ibigcsehometuition.com/wp-content/uploads/2019/11/go-up.jpg"
+            width="46"
+            alt=""
+        /></a>
+        <div class="footer-list">
+          <div class="footer-header">Wisdom Academy</div>
+          <a href="/about" class="footer-link w-inline-block"
+            ><div>About</div></a
+          ><a href="/careers" class="footer-link w-inline-block"
+            ><div>Courses</div></a
+          ><a href="/the-commons" class="footer-link w-inline-block"
+            ><div>IB</div></a
+          ><a href="/mentor-program" class="footer-link w-inline-block"
+            ><div>IGCSE</div></a
+          ><a href="/privacy-policy" class="footer-link w-inline-block"
+            ><div>Testimonials</div></a
+          ><a href="/faq" class="footer-link w-inline-block"><div>FAQ</div></a
+          ><a href="/contact" class="footer-link w-inline-block"
+            ><div>Contact Us</div></a
+          >
+        </div>
+        <div class="footer-list">
+          <div class="footer-header">Follow us on</div>
+          <a href="/" target="_blank" class="footer-link w-inline-block"
+            ><div>Facebook</div></a
+          ><a href="/" target="_blank" class="footer-link w-inline-block"
+            ><div>Instagram</div></a
+          >
+          <a href="/" target="_blank" class="footer-link w-inline-block"
+            ><div>LinkedIn</div></a
+          ><a
+            href="https://github.com/LambdaSchool"
+            target="_blank"
+            class="footer-link w-inline-block"
+            ><div>Twitter</div></a
+          >
+        </div>
+      </div>
+      <div class="body-copy footnote">
+        Copyright © 2019 Wisdom Academy - All rights reserved
+      </div>
+    </div>
+  </body>
+</html>
