@@ -1,0 +1,793 @@
+<?php /* Template Name: WA-AboutUs */ ?>
+<head>
+  <!-- Required meta tags -->
+  <meta charset="utf-8" />
+  <meta
+    name="viewport"
+    content="width=device-width, initial-scale=1, maximum-scale=1, user-scalable=no"
+  />
+  <link
+    rel="stylesheet"
+    href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css"
+  />
+  <!-- Bootstrap CSS -->
+  <link
+    rel="stylesheet"
+    href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css"
+    integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T"
+    crossorigin="anonymous"
+  />
+
+  <link
+    rel="stylesheet"
+    href="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/assets/owl.carousel.min.css"
+  />
+  <link
+    rel="stylesheet"
+    href="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/assets/owl.theme.default.min.css"
+  />
+
+  <title>
+    IB, IGCSE Home Tutors / Tuitions in Mumbai | IB, IGCSE Classes Mumbai
+  </title>
+
+  <style>
+    .custom-toggler.navbar-toggler {
+      border-color: #727c90;
+    }
+    .custom-toggler .navbar-toggler-icon {
+      background-image: url("data:image/svg+xml;charset=utf8,%3Csvg viewBox='0 0 30 30' xmlns='http://www.w3.org/2000/svg'%3E%3Cpath stroke='rgba(255, 255, 255, 0.5)' stroke-width='2' stroke-linecap='round' stroke-miterlimit='10' d='M4 7h22M4 15h22M4 23h22'/%3E%3C/svg%3E");
+    }
+    @media screen and (min-width: 0px) and (max-width: 767px) {
+      #contact-form {
+        margin: 0px !important;
+      }
+    }
+
+    /*  footer */
+    .section {
+      display: block;
+      padding-top: 100px;
+      padding-bottom: 100px;
+      background-color: rgb(255, 255, 255);
+    }
+
+    .section.footer {
+      padding-top: 70px;
+      padding-bottom: 40px;
+      background-color: #0c0e1a;
+    }
+
+    .footer-div {
+      display: flex;
+      width: 40%;
+      margin-right: auto;
+      margin-left: auto;
+      -webkit-box-orient: horizontal;
+      -webkit-box-direction: normal;
+      flex-direction: row;
+      -webkit-box-pack: justify;
+      justify-content: space-between;
+    }
+
+    a {
+      background-color: transparent;
+    }
+
+    a:active,
+    a:hover {
+      outline: 0px;
+    }
+
+    .w-inline-block {
+      max-width: 100%;
+      display: inline-block;
+    }
+
+    a {
+      color: black;
+      text-decoration: none;
+    }
+
+    .footer-icon {
+      height: auto;
+    }
+
+    .footer-icon.w--current {
+      margin-right: 20px;
+    }
+
+    img {
+      border: 0px;
+      max-width: 100%;
+      vertical-align: middle;
+      display: inline-block;
+    }
+
+    .footer-list {
+      display: flex;
+      -webkit-box-orient: vertical;
+      -webkit-box-direction: normal;
+      flex-direction: column;
+    }
+
+    .footer-header {
+      margin-bottom: 10px;
+      padding-top: 4px;
+      padding-bottom: 4px;
+      font-family: Lato, sans-serif;
+      color: rgb(172, 178, 204);
+      font-size: 18px;
+      line-height: 20px;
+      font-weight: 400;
+      letter-spacing: 0.3px;
+      text-transform: none;
+    }
+
+    .footer-header:active {
+      opacity: 0.8;
+    }
+
+    .footer-link {
+      padding-top: 4px;
+      padding-bottom: 4px;
+      font-family: Lato, sans-serif;
+      color: rgb(112, 116, 134);
+      font-size: 14px;
+      line-height: 20px;
+      font-weight: 700;
+      letter-spacing: 0.3px;
+      text-decoration: none;
+      text-transform: none;
+    }
+
+    .footer-link:hover {
+      color: rgb(162, 173, 190);
+    }
+
+    .footer-link:active {
+      opacity: 0.8;
+    }
+
+    .body-copy {
+      /* width: 100%; */
+      margin-top: 14px;
+      font-family: Lato, sans-serif;
+      color: rgb(56, 54, 81);
+      font-size: 17px;
+      line-height: 30px;
+      font-weight: 400;
+    }
+
+    .body-copy.footnote {
+      margin-top: 40px;
+      color: rgb(85, 89, 109);
+      font-size: 14px;
+      text-align: center;
+    }
+
+    @media (max-width: 767px) {
+      .section {
+        padding-top: 80px;
+        padding-bottom: 80px;
+      }
+    }
+
+    @media (max-width: 479px) {
+      .section {
+        padding-top: 60px;
+        padding-bottom: 60px;
+      }
+    }
+
+    @media (max-width: 991px) {
+      .footer-div {
+        width: 60%;
+        -webkit-box-orient: horizontal;
+        -webkit-box-direction: normal;
+        flex-direction: row;
+        -webkit-box-pack: justify;
+        justify-content: space-between;
+        -webkit-box-align: stretch;
+        align-items: stretch;
+      }
+    }
+
+    @media (max-width: 479px) {
+      .footer-div {
+        width: 80%;
+        -webkit-box-orient: vertical;
+        -webkit-box-direction: normal;
+        flex-direction: column;
+        -webkit-box-align: center;
+        align-items: center;
+      }
+    }
+
+    @media (max-width: 991px) {
+      .footer-icon {
+        margin-top: 6px;
+      }
+    }
+
+    @media (max-width: 479px) {
+      .footer-list {
+        margin-top: 40px;
+        -webkit-box-align: center;
+        align-items: center;
+      }
+    }
+
+    @media (max-width: 991px) {
+      .footer-header {
+        display: block;
+        transition: background-color 400ms ease 0s, opacity 400ms ease 0s,
+          color 400ms ease 0s;
+        text-align: left;
+      }
+    }
+
+    @media (max-width: 991px) {
+      .footer-link {
+        display: block;
+        transition: background-color 400ms ease 0s, opacity 400ms ease 0s,
+          color 400ms ease 0s;
+      }
+    }
+
+    @media (max-width: 479px) {
+      .footer-list {
+        margin-top: 40px;
+        -webkit-box-align: center;
+        align-items: center;
+      }
+    }
+
+    @media (max-width: 991px) {
+      .footer-header {
+        display: block;
+        transition: background-color 400ms ease 0s, opacity 400ms ease 0s,
+          color 400ms ease 0s;
+        text-align: left;
+      }
+    }
+
+    @media (max-width: 767px) {
+      .body-copy {
+        /* width: 100%; */
+      }
+    }
+
+    @media (max-width: 479px) {
+      .body-copy {
+        line-height: 28px;
+      }
+    }
+
+    @media (max-width: 479px) {
+      .body-copy.footnote {
+        padding-right: 10px;
+        padding-left: 10px;
+        line-height: 20px;
+      }
+    }
+
+    /* footer end */
+    /* 
+     #container{
+      list-style: none;
+      padding: 0;
+    } */
+    .bullet {
+      padding-left: 1.3em;
+    }
+    .bullet:before {
+      content: "\f00c"; /* FontAwesome Unicode */
+      font-family: FontAwesome;
+      display: inline-block;
+      margin-left: -1.3em; /* same as padding-left set on li */
+      width: 1.3em; /* same as padding-left set on li */
+    }
+
+    /* section 4 */
+    .button {
+      margin-right: 40px;
+      margin-left: 40px;
+      padding: 12px 25px;
+      border-radius: 0px;
+      background-color: #0e4eca;
+      transition: background-color 400ms ease 0s, opacity 400ms ease 0s;
+      color: rgb(255, 255, 255);
+      font-size: 14px;
+      line-height: 20px;
+      letter-spacing: 0.5px;
+      text-decoration: none;
+      text-transform: none;
+    }
+
+    .button.no-padding {
+      margin-top: 40px;
+      margin-right: auto;
+      margin-left: auto;
+      -webkit-transition: background-color 400ms ease, opacity 400ms ease;
+      transition: background-color 400ms ease, opacity 400ms ease;
+      font-family: Lato, sans-serif;
+      font-size: 15px;
+      font-weight: 700;
+      letter-spacing: 0px;
+    }
+
+    .feature-text.white {
+      color: #c3c3c3;
+    }
+
+    .feature-text.center {
+      width: 100%;
+      margin-right: auto;
+      margin-left: auto;
+      text-align: center;
+    }
+
+    .feature-text {
+      width: 40%;
+      font-family: Lato, sans-serif;
+      color: #383651;
+      font-size: 2rem;
+      line-height: 56px;
+      text-align: left;
+      letter-spacing: -0.5px;
+    }
+
+    @media (max-width: 479px) {
+      .feature-text {
+        color: #fff;
+        font-size: 40px;
+        line-height: 48px;
+        text-align: center;
+      }
+    }
+
+    .img-container {
+      width: 100%;
+      -webkit-background-size: cover;
+      -moz-background-size: cover;
+      -o-background-size: cover;
+      background-size: cover;
+      background-position: 40% 0;
+      overflow-y: hidden;
+    }
+
+    .inner-container {
+      text-align: center;
+      position: relative;
+      width: 100%;
+      top: 30%;
+    }
+  </style>
+</head>
+
+<body>
+  <div
+    style="z-index: 9997;background: #182c48;position: fixed;top: 0;width: 100%;padding: 4px;display: inline-block;box-shadow: 0 4px 6px #283f6b;"
+  ></div>
+
+  <nav class="navbar navbar-expand-lg " style="background-color: #233c6e;">
+        <a class="navbar-brand" href="#">
+          <img
+            src="https://expertey.in/wp-content/uploads/2019/wisdom/img/WA-gry.png"
+            style="position:absolute;top: 26px;left: 30px;width: 83px;padding: 3px;opacity: .6;z-index: 999;"
+          />
+        </a>
+        <button
+          class="navbar-toggler custom-toggler"
+          type="button"
+          data-toggle="collapse"
+          data-target="#navbarSupportedContent"
+          aria-controls="navbarSupportedContent"
+          aria-expanded="false"
+          aria-label="Toggle navigation"
+        >
+          <span class="navbar-toggler-icon"></span>
+        </button>
+    
+        <div
+          class="collapse navbar-collapse justify-content-end"
+          id="navbarSupportedContent"
+        >
+          <ul class="navbar-nav " style="text-align: right;">
+            <li class="nav-item ">
+              <a class="nav-link" href="/wisdom" style="color: #B1B4C1;"
+                >Home <span class="sr-only">(current)</span></a
+              >
+            </li>
+            <li class=" ">
+              <a class="nav-link active" href="/wisdom" style="color: #B1B4C1;"
+                >About Us <span class=""></span
+              ></a>
+            </li>
+            <li class="dropdown nav-item">
+              <a
+                class="dropdown-toggle nav-link"
+                data-toggle="dropdown"
+                href="/"
+                style="color: #B1B4C1;"
+                >Courses <span class="caret"></span
+              ></a>
+              <ul class="dropdown-menu" style="background-color: #233c6e; text-align: center;">
+                <li>
+                  <a style="color: #B1B4C1;"
+                    href="/international-baccalaureate-coaching-classes-certified-ib-home-tutors-in-mumbai"
+                    >IB</a
+                  >
+                </li>
+                <li>
+                  <a style="color: #B1B4C1;"
+                    href="/igcse-coaching-classes-home-tutors-in-andheri-borivali-mumbai"
+                    >IGSE</a
+                  >
+                </li>
+                <li><a  style="color: #B1B4C1;" href="/a-level">A Level</a></li>
+              </ul>
+            </li>
+    
+            <li class="nav-item">
+              <a class="nav-link" href="/contact" style="color: #B1B4C1;"
+                >Contact</a
+              >
+            </li>
+          </ul>
+        </div>
+      </nav>
+
+  <div
+    id="testimonials"
+    class="container-fluid"
+    style="  background: #233c6e;
+    font-family: poppins; padding-bottom: 3rem;"
+  >
+    <div class="row">
+      <div class="col-lg-12 text-center" style="margin-top: 3rem;">
+        <span style="font-size: 2rem; color: #c2c8d4;"
+          >Premier IGCSE / IBDP / A LEVEL <br />Home Tuitions & Group
+          Tuitions<br />
+          in Mumbai</span
+        >
+      </div>
+    </div>
+  </div>
+
+  <div class="container">
+    <div class="row">
+      <div class="col-lg-12">
+        <div
+          style="    letter-spacing: -3.2px;
+        line-height: 58px;
+        font-weight: 700;
+        font-size: 40px;
+        margin: 0;
+        text-transform: none; margin-bottom: 2rem; margin-top: 2rem;"
+        >
+          Our Story
+        </div>
+      </div>
+    </div>
+
+    <div class="row">
+      <div class="col-md-6">
+        <div
+          style="letter-spacing: 0;
+        line-height: 28px;
+        font-weight: 700;
+        font-size: 20px;"
+        >
+          Founded over 25 years ago, we’ve grown from a small education hub in
+          Mumbai to a leading education revolution.
+        </div>
+      </div>
+
+      <div class="col-md-6">
+        <div
+          style="margin-bottom: 0;
+        letter-spacing: 0;
+        line-height: 28px;
+        font-weight: 700;
+        font-size: 20px;
+        font-weight: 400;"
+        >
+          <p>
+            Mr. Prashant Ganger has been providing students of Mumbai with
+            quality education since 1992. He was the pioneer who brought the
+            concept of Home Tuitions in mumbai and has established a strong
+            credibility for himself in the same field. Having all his years of
+            experience by his side Mr. Prashant decided to take a step further.
+            It was in the month of May 2005, that Wisdom Academy was started
+            under the dynamic leadership of academician Mr. Prashant Gangar. He
+            aimed to provide classroom coaching to hundreds of aspirants.
+          </p>
+          <p>
+            In the journey of 8 years, Wisdom Academy has grown from strength to
+            strength. What started as a single institute has grown to 2
+            institutes with more than 1000 students taught. Mr. Prashant has
+            always focused on adapting with time and provide all the help and
+            support to students so that they achieve nothing but the best in
+            their professional careers. Wisdom Academy is a result-oriented
+            institute which believes in giving top results in all competitive
+            exams.
+          </p>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <div
+    class="img-container"
+    style="background-color: #233c6e;height: 500px;"
+  >
+    <div class="inner-container">
+      <p
+        class="feature-text center white"
+        style=" font-weight: 700;
+      font-size: 4rem;
+letter-spacing: -2.6px;
+line-height: 62px;   color: #fff;"
+      >
+        WISDOM ACADEMY
+      </p>
+    </div>
+  </div>
+
+  
+  <div
+    class="accordion"
+    id="accordionExample"
+    style="margin-top: -15rem;
+  padding: 1rem;"
+  >
+    <div class="card">
+      <div class="card-header" id="headingOne">
+        <h2 class="mb-0">
+          <i class="fa fa-users"></i>
+          <button
+            class="btn btn-link"
+            type="button"
+            data-toggle="collapse"
+            data-target="#collapseOne"
+            
+            aria-controls="collapseOne"
+            style="color: black;"
+          >
+            FACULTY PROFILE
+          </button>
+        </h2>
+      </div>
+
+      <div
+        id="collapseOne"
+        class="collapse "
+        aria-labelledby="headingOne"
+        data-parent="#accordionExample"
+      >
+        <div class="card-body">
+          The basic structure of the Institute is firmly built on a highly
+          professional faculty result oriented faculty comprising of a perfect
+          blend of teachers from various fields. Our faculty is a mix of
+          engineers, Post graduates, Doctors, CAs. We recruit faculty who has
+          had a rich experience of teaching their respective subjects and are an
+          expert at teaching them Each and every faculty member who is working
+          at Wisdom Academy has been selected through a rigorous process. Our
+          students are excelling largely due to faculty’s unique teaching
+          methodology, commitment and dedication.
+        </div>
+      </div>
+    </div>
+    <div class="card">
+      <div class="card-header" id="headingTwo">
+        <h2 class="mb-0">
+          <i class="fa fa-eye"></i>
+          <button
+            class="btn btn-link collapsed"
+            type="button"
+            data-toggle="collapse"
+            data-target="#collapseTwo"
+            aria-expanded="false"
+            aria-controls="collapseTwo"
+            style="color: black;"
+          >
+            VISION
+          </button>
+        </h2>
+      </div>
+      <div
+        id="collapseTwo"
+        class="collapse"
+        aria-labelledby="headingTwo"
+        data-parent="#accordionExample"
+      >
+        <div class="card-body">
+          Our vision is to become a educational set up that works towards the
+          overall development of its students by strengthening the brightest and
+          young minds to achieve and fly high in sky so as to achieve best in
+          their lives. At Wisdom Academy we nurture the students to explore
+          their full potential so as to boost their self-confidence and moral in
+          order to realize their dreams by advanced teaching methodology. At
+          Wisdom Academy, students gain an understanding of the courses they
+          enroll for and get mentorship in career directions while enhancing the
+          educational process as they become the next generation of
+          professionals who are going to run the country’s economy and steer it
+          towards growth and prosperity.
+        </div>
+      </div>
+    </div>
+    <div class="card">
+      <div class="card-header" id="headingThree">
+        <h2 class="mb-0">
+          <i class="fa fa-bullseye"></i>
+          <button
+            class="btn btn-link collapsed"
+            type="button"
+            data-toggle="collapse"
+            data-target="#collapseThree"
+            aria-expanded="false"
+            aria-controls="collapseThree"
+            style="color: black;"
+          >
+            MISSION
+          </button>
+        </h2>
+      </div>
+      <div
+        id="collapseThree"
+        class="collapse"
+        aria-labelledby="headingThree"
+        data-parent="#accordionExample"
+      >
+        <div class="card-body">
+          We at Wisdom Academy aspire to be the best in the Education Business
+          and exceed expectations by providing quality instruction to students
+          that would help them to achieve their potential for their own future
+          success.
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <div class="container">
+    <div class="row">
+      <div class="col-md-12">
+        <div
+          style="    font-size: 34px;
+        letter-spacing: -2.2px;
+        line-height: 50px; padding:4rem; text-align: center;"
+        >
+          WHY WISDOM ACADEMY?
+        </div>
+        <p style="text-align: center; font-style: italic;">
+          Still confused about why to trust us? Here are a few things about us
+          that may help change your mind
+        </p>
+      </div>
+      <div class="col-md-12">
+        <div
+          style="    font-size: 18px;
+        letter-spacing: 0;
+        line-height: 32px;
+        font-weight: 700;
+        font-weight: 400; padding:1rem"
+        >
+          We at Wisdom Academy are in the education field for the past 15 years,
+          and, with the experience, perseverance and dedication of an esteemed
+          panel of teachers, we are proud to have produced many top ranking
+          students. We aspire to be a one-stop shop for all students needs.
+          Courses such as IB/ IGCSE/A LEVEL are tough require tremendous
+          preparation and commitment. Most students therefore, in order to get
+          that extra edge, seek professional guidance by way of private
+          coaching.
+        </div>
+      </div>
+      <div class="col-md-12">
+        <div
+          style="    font-size: 18px;
+        letter-spacing: 0;
+        line-height: 32px;
+        font-weight: 700;
+        font-weight: 400; padding:1rem"
+        >
+          <div style="font-weight: 500;">
+            Why Home Tuitions/ Group Tuitions with Wisdom Academy?
+          </div>
+          <ul>
+            <li>
+              Logic based learning an concept building, periodic tests held
+              regularly.
+            </li>
+            <li>Home tuitions by experienced professionals.</li>
+            <li>Group tuitions in small batches (5-10) students.</li>
+            <li>Guidance in preparing Extended essay and IA.</li>
+            <li>Superior learning techniques</li>
+            <li>Personalized attention.</li>
+          </ul>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <!-- footer-start-->
+  <div class="section footer" style="margin-top: 8rem;">
+    <div class="footer-div">
+      <div class="footer-list">
+        <div class="footer-header">
+          <img
+            src="https://expertey.in/wp-content/uploads/2019/wisdom/img/walog.png"
+          />
+        </div>
+        <a href="/about" class="footer-link w-inline-block">
+          <div>About</div> </a
+        ><a href="#courses" class="footer-link w-inline-block">
+          <div>Courses</div> </a
+        ><a href="#courses" class="footer-link w-inline-block">
+          <div>IB</div> </a
+        ><a href="#courses" class="footer-link w-inline-block">
+          <div>IGCSE</div>
+        </a>
+        <a href="#courses" class="footer-link w-inline-block">
+          <div>A Level</div>
+        </a>
+        <a href="#testimonials" class="footer-link w-inline-block">
+          <div>Testimonials</div> </a
+        ><a href="/contact" class="footer-link w-inline-block">
+          <div>Contact Us</div>
+        </a>
+      </div>
+      <div class="footer-list">
+        <div class="footer-header">Follow us on</div>
+        <a
+          href="https://www.facebook.com/wisdomacademyIndia1/"
+          target="_blank"
+          class="footer-link w-inline-block"
+        >
+          <div>Facebook</div> </a
+        ><a
+          href="https://www.instagram.com/wisdomacademy4488/"
+          target="_blank"
+          class="footer-link w-inline-block"
+        >
+          <div>Instagram</div>
+        </a>
+        <a
+          href="https://www.linkedin.com/company/wisdom-academy1/"
+          target="_blank"
+          class="footer-link w-inline-block"
+        >
+          <div>LinkedIn</div> </a
+        ><a
+          href="https://twitter.com/WisdomAcademy5"
+          target="_blank"
+          class="footer-link w-inline-block"
+        >
+          <div>Twitter</div>
+        </a>
+      </div>
+    </div>
+    <div class="body-copy footnote">
+      Copyright © 2019 Wisdom Academy - All rights reserved
+    </div>
+  </div>
+
+  <!-- Optional JavaScript -->
+  <!-- jQuery first, then Popper.js, then Bootstrap JS -->
+  <script
+    src="https://code.jquery.com/jquery-3.4.1.min.js"
+    integrity="sha256-CSXorXvZcTkaix6Yvo6HppcZGetbYMGWSFlBw8HfCJo="
+    crossorigin="anonymous"
+  ></script>
+  <script
+    src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js"
+    integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1"
+    crossorigin="anonymous"
+  ></script>
+  <script
+    src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js"
+    integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM"
+    crossorigin="anonymous"
+  ></script>
+</body>

@@ -1,0 +1,1814 @@
+<?php /* Template Name: WA-CACS-Landing */ ?>
+
+<head>
+  <!-- Required meta tags -->
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1, user-scalable=no" />
+  <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css" />
+  <!-- Bootstrap CSS -->
+  <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css"
+    integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous" />
+
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/assets/owl.carousel.min.css" />
+  <link rel="stylesheet"
+    href="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/assets/owl.theme.default.min.css" />
+
+  <title>CA Classes in Mumbai, CS Classes, ICWA Classes in Andheri, Borivali, Mumbai</title>
+
+  <style>
+    .owl-carousel,
+.owl-stage-outer { transition: height 100ms ease-in-out 0s; }
+    .custom-toggler.navbar-toggler {
+      border-color: #000000;
+    }
+
+    .custom-toggler .navbar-toggler-icon {
+      background-image: url("data:image/svg+xml;charset=utf8,%3Csvg viewBox='0 0 30 30' xmlns='http://www.w3.org/2000/svg'%3E%3Cpath stroke='rgba(39, 64, 116,1)' stroke-width='2' stroke-linecap='round' stroke-miterlimit='10' d='M4 7h22M4 15h22M4 23h22'/%3E%3C/svg%3E");
+    }
+
+    .testimonial-pair-left {
+      font-weight: bold;
+    }
+
+    .testimonial-quote {
+      text-align: center;
+      font-style: italic;
+      padding: 1rem;
+      margin-bottom: 2rem;
+    }
+
+    @media screen and (min-width: 0px) and (max-width: 767px) {
+      .section-image {
+        margin-top: 0px !important;
+        margin-bottom: 0px !important;
+      }
+
+      /* show it on small screens */
+    }
+
+    /*  footer */
+    .section {
+      display: block;
+      padding-top: 100px;
+      padding-bottom: 100px;
+      background-color: rgb(255, 255, 255);
+    }
+
+    .section.footer {
+      padding-top: 70px;
+      padding-bottom: 40px;
+      background-color: #0c0e1a;
+    }
+
+    .footer-div {
+      display: flex;
+      width: 40%;
+      margin-right: auto;
+      margin-left: auto;
+      -webkit-box-orient: horizontal;
+      -webkit-box-direction: normal;
+      flex-direction: row;
+      -webkit-box-pack: justify;
+      justify-content: space-between;
+    }
+
+    a {
+      background-color: transparent;
+    }
+
+    a:active,
+    a:hover {
+      outline: 0px;
+    }
+
+    .w-inline-block {
+      max-width: 100%;
+      display: inline-block;
+    }
+
+    a {
+      /* color: rgb(187, 19, 51); */
+      text-decoration: none;
+    }
+
+    .footer-icon {
+      height: auto;
+    }
+
+    .footer-icon.w--current {
+      margin-right: 20px;
+    }
+
+    img {
+      border: 0px;
+      max-width: 100%;
+      vertical-align: middle;
+      display: inline-block;
+    }
+
+    .footer-list {
+      display: flex;
+      -webkit-box-orient: vertical;
+      -webkit-box-direction: normal;
+      flex-direction: column;
+    }
+
+    .footer-header {
+      margin-bottom: 10px;
+      padding-top: 4px;
+      padding-bottom: 4px;
+      font-family: Lato, sans-serif;
+      color: rgb(172, 178, 204);
+      font-size: 18px;
+      line-height: 20px;
+      font-weight: 400;
+      letter-spacing: 0.3px;
+      text-transform: none;
+    }
+
+    .footer-header:active {
+      opacity: 0.8;
+    }
+
+    .footer-link {
+      padding-top: 4px;
+      padding-bottom: 4px;
+      font-family: Lato, sans-serif;
+      color: rgb(112, 116, 134);
+      font-size: 14px;
+      line-height: 20px;
+      font-weight: 700;
+      letter-spacing: 0.3px;
+      text-decoration: none;
+      text-transform: none;
+    }
+
+    .footer-link:hover {
+      color: rgb(162, 173, 190);
+    }
+
+    .footer-link:active {
+      opacity: 0.8;
+    }
+
+    .body-copy {
+      /* width: 100%; */
+      margin-top: 14px;
+      font-family: Lato, sans-serif;
+      color: rgb(56, 54, 81);
+      font-size: 17px;
+      line-height: 30px;
+      font-weight: 400;
+    }
+
+    .body-copy.footnote {
+      margin-top: 40px;
+      color: rgb(85, 89, 109);
+      font-size: 14px;
+      text-align: center;
+    }
+
+    @media (max-width: 767px) {
+      .section {
+        padding-top: 80px;
+        padding-bottom: 80px;
+      }
+    }
+
+    @media (max-width: 479px) {
+      .section {
+        padding-top: 60px;
+        padding-bottom: 60px;
+      }
+    }
+
+    @media (max-width: 991px) {
+      .footer-div {
+        width: 60%;
+        -webkit-box-orient: horizontal;
+        -webkit-box-direction: normal;
+        flex-direction: row;
+        -webkit-box-pack: justify;
+        justify-content: space-between;
+        -webkit-box-align: stretch;
+        align-items: stretch;
+      }
+    }
+
+    @media (max-width: 479px) {
+      .footer-div {
+        width: 80%;
+        -webkit-box-orient: vertical;
+        -webkit-box-direction: normal;
+        flex-direction: column;
+        -webkit-box-align: center;
+        align-items: center;
+      }
+    }
+
+    @media (max-width: 991px) {
+      .footer-icon {
+        margin-top: 6px;
+      }
+    }
+
+    @media (max-width: 479px) {
+      .footer-list {
+        margin-top: 40px;
+        -webkit-box-align: center;
+        align-items: center;
+      }
+    }
+
+    @media (max-width: 991px) {
+      .footer-header {
+        display: block;
+        transition: background-color 400ms ease 0s, opacity 400ms ease 0s,
+          color 400ms ease 0s;
+        text-align: left;
+      }
+    }
+
+    @media (max-width: 991px) {
+      .footer-link {
+        display: block;
+        transition: background-color 400ms ease 0s, opacity 400ms ease 0s,
+          color 400ms ease 0s;
+      }
+    }
+
+    @media (max-width: 479px) {
+      .footer-list {
+        margin-top: 40px;
+        -webkit-box-align: center;
+        align-items: center;
+      }
+    }
+
+    @media (max-width: 991px) {
+      .footer-header {
+        display: block;
+        transition: background-color 400ms ease 0s, opacity 400ms ease 0s,
+          color 400ms ease 0s;
+        text-align: left;
+      }
+    }
+
+    @media (max-width: 767px) {
+      .body-copy {
+        /* width: 100%; */
+      }
+    }
+
+    @media (max-width: 479px) {
+      .body-copy {
+        line-height: 28px;
+      }
+    }
+
+    @media (max-width: 479px) {
+      .body-copy.footnote {
+        padding-right: 10px;
+        padding-left: 10px;
+        line-height: 20px;
+      }
+    }
+
+    /* footer end */
+
+    /* section 4 */
+    .button {
+      margin-right: 40px;
+      margin-left: 40px;
+      padding: 12px 25px;
+      border-radius: 0px;
+      background-color: #0e4eca;
+      transition: background-color 400ms ease 0s, opacity 400ms ease 0s;
+      color: rgb(255, 255, 255);
+      font-size: 14px;
+      line-height: 20px;
+      letter-spacing: 0.5px;
+      text-decoration: none;
+      text-transform: none;
+    }
+
+    .button.no-padding {
+      margin-top: 40px;
+      margin-right: auto;
+      margin-left: auto;
+      -webkit-transition: background-color 400ms ease, opacity 400ms ease;
+      transition: background-color 400ms ease, opacity 400ms ease;
+      font-family: Lato, sans-serif;
+      font-size: 15px;
+      font-weight: 700;
+      letter-spacing: 0px;
+    }
+
+    .feature-text.white {
+      color: #c3c3c3;
+    }
+
+    .feature-text.center {
+      width: 100%;
+      margin-right: auto;
+      margin-left: auto;
+      text-align: center;
+    }
+
+    .feature-text {
+      width: 40%;
+      font-family: Lato, sans-serif;
+      color: #383651;
+      font-size: 2rem;
+      line-height: 56px;
+      text-align: left;
+      letter-spacing: -0.5px;
+    }
+
+    @media (max-width: 479px) {
+      .feature-text {
+        color: #fff;
+        font-size: 40px;
+        line-height: 48px;
+        text-align: center;
+      }
+    }
+
+    .img-container {
+      width: 100%;
+      -webkit-background-size: cover;
+      -moz-background-size: cover;
+      -o-background-size: cover;
+      background-size: cover;
+      background-position: 40% 0;
+      overflow-y: hidden;
+    }
+
+    .inner-container {
+      text-align: center;
+      position: relative;
+      width: 100%;
+      top: 30%;
+    }
+
+    a:hover {
+      color: #e0eefc;
+      text-decoration: underline;
+    }
+
+    /* zoom start */
+
+    .zoom {
+      transition: transform 0.2s;
+      padding: 1.3rem;
+      /* Animation */
+    }
+
+    .zoom:hover {
+      transform: scale(1.1);
+      /* box-shadow: 1px 1px 3px grey, -1px -1px 3px #6a7d91; */
+    }
+
+    /* zoom end */
+
+    .text-center {
+      text-align: center;
+    }
+
+    .text-left {
+      text-align: left;
+      color: #212529;
+      padding-top: 1rem;
+      padding-left: 1rem;
+      font-weight: 600;
+      font-size: 1.1rem;
+    }
+
+    .wrapper {
+      width: 1170px;
+      margin: 0 auto;
+      font-family: poppins;
+    }
+
+    .section-padding {
+      padding: 60px 0;
+    }
+
+    .testimonial-carausel {
+      margin: 5% auto 0;
+    }
+
+    .img-area {
+      width: 60px;
+      height: 60px;
+      display: block;
+      /* overflow: hidden; */
+      border-radius: 50%;
+      margin: 0 auto;
+    }
+
+    .img-area img {
+      /* width: 50%; */
+    }
+
+    .single-testi {
+    text-align: center;
+    font-size: 1.3rem;
+    background-color: #ffffff;
+    border: 2px solid #3d6380;
+    border-radius: 20px;
+}
+
+    .img-text h2 {
+      text-transform: uppercase;
+      margin: 20px 0 -15px;
+      color: #ff5257;
+    }
+
+    .owl-dots {
+      text-align: center;
+      margin-top: -1rem;
+    }
+
+    .owl-carousel button.owl-dot {
+      display: inline-block;
+      height: 11px !important;
+      width: 11px !important;
+      background-color: rgb(145, 154, 204);
+      opacity: 0.8;
+      border-radius: 50%;
+      margin: 50px 5px 0;
+    }
+
+    .owl-carousel button.owl-dot.active {
+      background-color: #083a8e;
+      ;
+    }
+
+    @media only screen and (min-width: 768px) and (max-width: 991px) {
+      .wrapper {
+        width: 100%;
+      }
+    }
+
+    @media only screen and (max-width: 767px) {
+      .wrapper {
+        width: 100%;
+      }
+    }
+
+    @media only screen and (min-width: 480px) and (max-width: 761px) {
+      .wrapper {
+        width: 100%;
+      }
+    }
+
+    .progress-bar {
+      width: 0;
+      animation: progress 1.5s ease-in-out forwards;
+    }
+
+    .title {
+      opacity: 0;
+      animation: show 0.35s forwards ease-in-out 0.5s;
+    }
+
+    .progress {
+      background-color: #888888;
+    }
+
+    @keyframes progress {
+      from {
+        width: 0;
+      }
+
+      to {
+        width: 100%;
+      }
+    }
+
+    @keyframes show {
+      from {
+        opacity: 0;
+      }
+
+      to {
+        opacity: 1;
+      }
+    }
+
+    .content {
+      margin-left: 1rem;
+      margin-bottom: 2rem;
+    }
+
+    .content h3 {
+      color: #505d63;
+    }
+
+    .icon i.fa {
+      line-height: 48px !important;
+    }
+
+    .icon i {
+      color: #fff;
+      font-size: 20px;
+      width: 48px;
+      height: 48px;
+      line-height: 48px;
+      border-radius: 50%;
+      text-align: center;
+    }
+
+    .icon i {
+      background: #4db2d8;
+    }
+    .owl-stage {
+    display: -webkit-flex;
+    display: -ms-flexbox;
+    display: flex;
+
+    -webkit-flex-wrap: wrap;
+    -ms-flex-wrap: wrap;
+    flex-wrap: wrap;
+}.owl-item{
+    display: -webkit-flex;
+    display: -ms-flexbox;
+    display: flex;
+    height: auto !important;
+}
+  </style>
+</head>
+
+<body style="background: #fdfdfd; overflow-x: hidden">
+  <div
+    style="z-index: 9997;background: #182c48;position: fixed;top: 0;width: 100%;padding: 4px;display: inline-block;box-shadow: 0 4px 6px #283f6b;">
+  </div>
+
+  <nav class="navbar navbar-expand-lg " style="margin-top: 2rem;">
+    <a class="navbar-brand" href="#">
+
+      <img src="http://test.cacsicwacoaching.com//wp-content/uploads/2019/img/walog.png"
+        style="position:absolute;left: 25px;width: 153px;padding: 3px;opacity: 1;z-index: 999; top: -4px;" />
+    </a>
+    <button class="navbar-toggler custom-toggler" type="button" data-toggle="collapse"
+      data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false"
+      aria-label="Toggle navigation">
+      <span class="navbar-toggler-icon"></span>
+    </button>
+
+    <div class="collapse navbar-collapse justify-content-end" id="navbarSupportedContent">
+      <ul class="navbar-nav " style="text-align: right;">
+        <li class="nav-item active">
+          <a class="nav-link" href="/new-landing-page" style="color: #274074;">Home <span
+              class="sr-only">(current)</span></a>
+        </li>
+        <!-- <li class=" ">
+          <a class="nav-link" href="/about" style="color: #274074;"
+            >About Us <span class=""></span
+          ></a>
+        </li>
+        <li class="dropdown nav-item">
+          <a
+            class="dropdown-toggle nav-link"
+            data-toggle="dropdown"
+            href="/"
+            style="color: #274074;"
+            >Courses <span class="caret"></span
+          ></a>
+          <ul
+            class="dropdown-menu"
+            style="background-color: #233c6e; text-align: center;"
+          >
+            <li>
+              <a
+                style="color: #274074;"
+                href="/international-baccalaureate-coaching-classes-certified-ib-home-tutors-in-mumbai"
+                >IB</a
+              >
+            </li>
+            <li>
+              <a
+                style="color: #274074;"
+                href="/igcse-coaching-classes-home-tutors-in-andheri-borivali-mumbai"
+                >IGSE</a
+              >
+            </li>
+            <li><a style="color: #274074;" href="/a-level">A Level</a></li>
+          </ul>
+        </li> -->
+
+        <li class="nav-item">
+          <a class="nav-link" href="/contact" style="color: #274074;">Contact</a>
+        </li>
+      </ul>
+    </div>
+  </nav>
+
+  <div id="testimonials" class="container-fluid" style=" 
+      font-family: poppins; margin-top: -2rem;">
+    <div class="row">
+      <div class="col-lg-12 text-center" style="margin-top: 4.5rem;">
+        <span style="font-size: 2rem; font-weight: 900; color: #274074;">Premier Professional CA classes, CS classes  <br>
+          and ICWA coaching classes<br />in Mumbai
+      </div>
+    </div>
+    <div class="wrapper">
+      <div class="testimonial-carousel section-padding owl-carousel">
+        <div class="single-testi">
+          <div class="img-text" style="padding: 8%; text-align: left;">
+            <div class="testimonial-quote">
+              The study environment is enthusiastic, increasing our initiative
+              to study, with the help of our wonderful teachers. Having joined
+              Wisdom Academy coaching classes 5 months ago , I
+              experience an immense change in my calculations and concepts. Assigments provided by them
+             was a real game changer for me.
+            </div>
+            <div>
+              <div>
+                <span class="testimonial-pair-left">Level:</span>
+                <span>CS EXECUTIVE</span>
+              </div>
+              <div>
+                <span class="testimonial-pair-left">Attempt:</span>
+                <span> CS Executive June 2018</span>
+              </div>
+
+              <div>
+                <span class="testimonial-pair-left">Result:</span>
+                <span> <br> Highest Marks in Company Accounts 70/100</span>
+              </div>
+            </div>
+          </div>
+          <div class="" style="width: 100px; margin-left: 2%;
+                        margin-top: -5%; ">
+            <div class="img-area">
+              <img src="http://test.cacsicwacoaching.com//wp-content/uploads/2019/img/f4-47x47.jpg" alt="" width="60"
+                height="60" style="border-radius: 50%;" />
+            </div>
+
+            <div class="text-left">
+              <div>Krutika</div>
+            </div>
+          </div>
+        </div>
+
+        <div class="single-testi">
+          <div class="img-text" style="padding: 8%; text-align: left;">
+            <div class="testimonial-quote">
+              I must tell you that it has been a long time that I have been so excited and focused on my studies as when I enrolled in the Wisdom Classes. Never did I imagine any coaching institute giving me the support that I have been getting from Wisdom Academy.
+            </div>
+            <div>
+              <div>
+                <span class="testimonial-pair-left">Level:</span>
+                <span>CS FOUNDATION</span>
+              </div>
+
+              <div>
+                <span class="testimonial-pair-left">Attempt:</span>
+                <span>
+                  CS June 2018</span>
+              </div>
+
+              <div>
+                <span class="testimonial-pair-left">Result:</span>
+                <span>
+                  <br />Rank 59 (Highest Marks in Accounts 87/100) <br />
+                </span>
+              </div>
+            </div>
+          </div>
+          <div class="" style="width: 100px; margin-left: 2%;
+                      margin-top: -5%; ">
+            <div class="img-area">
+              <img src="http://test.cacsicwacoaching.com//wp-content/uploads/2019/img/m7-47x47.jpe" alt="" width="60"
+                height="60" style="border-radius: 50%;" />
+            </div>
+
+            <div class="text-left">
+              <div>Nilesh Chordia</div>
+            </div>
+          </div>
+        </div>
+        <div class="single-testi">
+          <div class="img-text" style="padding: 8%; text-align: left;">
+            <div class="testimonial-quote">
+              Studying with Wisdom Academy was a great experience. Wisdom Academy really transformed my first score of 70 (with no coaching) to the present 102. Lectures were very much detailed making each and every topic clear. I would like to convey my appreciation and gratitude to Wisdom Academy team for their efforts.
+            </div>
+            <div>
+              <div>
+                <span class="testimonial-pair-left">Level:</span>
+                <span>CS EXECUTIVE</span>
+              </div>
+              <div>
+                <span class="testimonial-pair-left">Attempt:</span>
+                <span> CS Executive June 2018</span>
+              </div>
+
+              <div>
+                <span class="testimonial-pair-left">Result:</span>
+                <span> <br>Highest Marks in ILL 75/100 <br>
+                  Highest Marks in ECL 85/100 <br>
+                  Highest marks in Taxation 89/100</span>
+              </div>
+            </div>
+          </div>
+          <div class="" style="width: 100px; margin-left: 2%;
+                margin-top: -5%; ">
+            <div class="img-area">
+              <img src="http://test.cacsicwacoaching.com//wp-content/uploads/2019/img/2-47x47.jpg" alt="" width="60"
+                height="60" style="border-radius: 50%;" />
+            </div>
+
+            <div class="text-left">
+              <div>Vidya Yadav</div>
+            </div>
+          </div>
+        </div>
+        <div class="single-testi">
+          <div class="img-text" style="padding: 8%; text-align: left;">
+            <div class="testimonial-quote">
+              The tutors here at Wisdom Academy are extremely helpful and
+              friendly. They make sure to clear all our doubts completely.
+            </div>
+            <div>
+              <div>
+                <span class="testimonial-pair-left">Level:</span>
+                <span> CS Executive </span>
+              </div>
+              <div>
+                <span class="testimonial-pair-left">Attempt:</span>
+                <span>CS Executive June 2018</span>
+              </div>
+            
+              <div>
+                <span class="testimonial-pair-left">Result:</span>
+                <span> <br>Highest Marks in Company Accounts 65/100 <br> <br></span>
+              </div>
+            </div>
+          </div>
+          <div class="" style="width: 100px; margin-left: 2%;
+                  margin-top: -5%; ">
+            <div class="img-area">
+              <img src="http://test.cacsicwacoaching.com//wp-content/uploads/2019/img/f5-47x47.jpe" alt="" width="60"
+                height="60" style="border-radius: 50%;" />
+            </div>
+
+            <div class="text-left">
+              <div>Monika Sharma</div>
+            </div>
+          </div>
+        </div>
+  
+        <div class="single-testi">
+          <div class="img-text" style="padding: 8%; text-align: left;">
+            <div class="testimonial-quote">
+              Wisdom Academy is pretty good, it helped me score higher in SPM,
+             CFR and I went from a 40/50 
+              to a 68/73 in a couple of months which is good. I would love to
+              recommend people to get associated with the faculties of Wisdom
+              Academy, especially in ICWA course.
+            </div>
+            <div>
+              <div>
+                <span class="testimonial-pair-left">Level:</span>
+                <span>ICWA FINAL</span>
+              </div>
+              <div>
+                <span class="testimonial-pair-left">Attempt:</span>
+                <span>
+                  ICWA FINAL Dec 2017</span>
+              </div>
+
+              <div>
+                <span class="testimonial-pair-left">Result:</span>
+                <span>
+                  <br /> Highest Marks in SPM 68/100 <br />
+                  Highest Marks in CFR 73/100</span>
+              </div>
+            </div>
+          </div>
+          <div class="" style="width: 100px; margin-left: 2%;
+                        margin-top: -5%; ">
+            <div class="img-area">
+              <img src="http://test.cacsicwacoaching.com//wp-content/uploads/2019/img/m8-47x47.jpe" alt="" width="60"
+                height="60" style="border-radius: 50%;" />
+            </div>
+
+            <div class="text-left">
+              <div>Rahul Seth</div>
+            </div>
+          </div>
+        </div>
+        <div class="single-testi">
+          <div class="img-text" style="padding: 8%; text-align: left;">
+            <div class="testimonial-quote">
+               My first step of success is all because of the family support I had and the support and motivation I got from my Wisdom Academy The institute provides expert faculties for studies and also the faculties are really motivating. There course is totally mapped according to ICWA module also their test series are really effective for clearing exams and preparing for exams.
+            </div>
+            <div>
+              <div>
+                <span class="testimonial-pair-left">Level:</span>
+                <span>ICWA FINAL</span>
+              </div>
+              <div>
+                <span class="testimonial-pair-left">Attempt:</span>
+                <span> ICWA FINAL June 2017</span>
+              </div>
+
+              <div>
+                <span class="testimonial-pair-left">Result:</span>
+                <span>
+                  <br />
+                  Rank 92 (Highest Marks in AFM 82/100)
+
+                </span>
+              </div>
+            </div>
+          </div>
+          <div class="" style="width: 100px; margin-left: 2%;
+                          margin-top: -5%; ">
+            <div class="img-area">
+              <img src="http://test.cacsicwacoaching.com//wp-content/uploads/2019/img/f14-47x47.jpe" alt="" width="60"
+                height="60" style="border-radius: 50%;" />
+            </div>
+
+            <div class="text-left">
+              <div>Riya Maniar</div>
+            </div>
+          </div>
+        </div>
+
+        <div class="single-testi">
+          <div class="img-text" style="padding: 8%; text-align: left;">
+            <div class="testimonial-quote">
+              Thank you Wisdom Academy for continuous support and guidance.
+              <br />
+
+              It meant a lot when you were there as a guiding stone while i was
+              not scoring well.
+              <br />
+              Thank you wisdom academy and Malik sir for helping me becoming
+              efficient learner.
+            </div>
+            <div>
+              <div>
+                <span class="testimonial-pair-left">Level:</span>
+                <span>ICWA FINAL</span>
+              </div>
+
+              <div>
+                <span class="testimonial-pair-left">Attempt:</span>
+                <span> ICWA FINAL June 2018</span>
+              </div>
+
+              <div>
+                <span class="testimonial-pair-left">Result:</span>
+                <span> <br /> Rank 79 (Highest Marks in taxation 75/100) <br> Highest Marks in Law 72/100 </span>
+              </div>
+            </div>
+          </div>
+          <div class="" style="width: 100px; margin-left: 2%;
+                        margin-top: -5%; ">
+            <div class="img-area">
+              <img src="http://test.cacsicwacoaching.com//wp-content/uploads/2019/img/m4-47x47.jpg" alt="" width="60"
+                height="60" style="border-radius: 50%;" />
+            </div>
+
+            <div class="text-left">
+              <div>Kiran Tyagi</div>
+            </div>
+          </div>
+        </div>
+        <div class="single-testi">
+          <div class="img-text" style="padding: 8%; text-align: left;">
+            <div class="testimonial-quote">
+              Wisdom Academy acted as a catalyst for me. Regular Doubt Classes
+              helped me prevent backlog of doubts. All in all this was a great
+              learning experience for me. Thank you Wisdom Academy
+            </div>
+
+            <div>
+              <div>
+                <span class="testimonial-pair-left">Level:</span>
+                <span> ICWA INTER</span>
+              </div>
+              <div>
+                <span class="testimonial-pair-left">Attempt:</span>
+                <span> ICWA INTER Dec 2017</span>
+              </div>
+
+              <div>
+                <span class="testimonial-pair-left">Result:</span>
+                <span>
+                  <br />Highest Marks in Company Accounts & Audit 65/100 <br />
+                  Highest Marks in OM/IT 77/100 <br />
+                  Highest marks in Law 70/100</span>
+              </div>
+            </div>
+          </div>
+          <div class="" style="width: 100px; margin-left: 2%;
+                          margin-top: -5%; ">
+            <div class="img-area">
+              <img src="http://test.cacsicwacoaching.com//wp-content/uploads/2019/img/m3-47x47.jpg" alt="" width="60"
+                height="60" style="border-radius: 50%;" />
+            </div>
+
+            <div class="text-left">
+              <div>Mahesh Tiwari</div>
+            </div>
+          </div>
+        </div>
+        <div class="single-testi">
+          <div class="img-text" style="padding: 8%; text-align: left;">
+            <div class="testimonial-quote">
+              From assignments..doubt clearing sessions everything was amazing.
+              Wisdom Academy helped me grow my confidence and improve my learning mindset.
+            </div>
+            <div>
+              <div>
+                <span class="testimonial-pair-left">Level:</span>
+                <span>ICWA INTER </span>
+              </div>
+              <div>
+                <span class="testimonial-pair-left">Attempt:</span>
+                <span> ICWA INTER June 17</span>
+              </div>
+
+              <div>
+                <span class="testimonial-pair-left">Result:</span>
+                <span>
+                  <br /> Rank 33
+                </span>
+              </div>
+            </div>
+          </div>
+          <div class="" style="width: 100px; margin-left: 2%;
+                              margin-top: -5%; ">
+            <div class="img-area">
+              <img src="http://test.cacsicwacoaching.com//wp-content/uploads/2019/img/hs-47x47.jpg" alt="" width="60"
+                height="60" style="border-radius: 50%;" />
+            </div>
+
+            <div class="text-left">
+              <div>Kalpesh Kadam</div>
+            </div>
+          </div>
+        </div>
+        <div class="single-testi">
+          <div class="img-text" style="padding: 8%; text-align: left;">
+            <div class="testimonial-quote">
+              I was in dilemma before joining academy but i was proved wrong
+              after seeing the effective results in my studies. Thank you Malik
+              Sir.
+            </div>
+            <div>
+              <div>
+                <span class="testimonial-pair-left">Level:</span>
+                <span>ICWA INTER</span>
+              </div>
+              <div>
+                <span class="testimonial-pair-left">Attempt:</span>
+                <span> ICWA INTER June 18</span>
+              </div>
+
+              <div>
+                <span class="testimonial-pair-left">Result:</span>
+                <span>
+                  <br />
+                  Rank 72
+                </span>
+              </div>
+            </div>
+          </div>
+          <div class="" style="width: 100px; margin-left: 2%;
+                            margin-top: -5%; ">
+            <div class="img-area">
+              <img src="http://test.cacsicwacoaching.com//wp-content/uploads/2019/img/f10-47x47.jpg" alt="" width="60"
+                height="60" style="border-radius: 50%;
+                " />
+            </div>
+
+            <div class="text-left">
+              <div>Seema Shelke</div>
+            </div>
+          </div>
+        </div>
+        <div class="single-testi">
+          <div class="img-text" style="padding: 8%; text-align: left;">
+            <div class="testimonial-quote">
+              All the classes were good and teachers are very supportive. Now i am really satisfied as Wisdom academy has provided me great faculty and saved my time.
+            </div>
+            <div>
+              <div>
+                <span class="testimonial-pair-left">Level:</span>
+                <span>ICWA INTER</span>
+              </div>
+              <div>
+                <span class="testimonial-pair-left">Attempt:</span>
+                <span> ICWA INTER June 18</span>
+              </div>
+
+              <div>
+                <span class="testimonial-pair-left">Result:</span>
+                <span>
+                  <br />
+                  Rank 58
+                </span>
+              </div>
+            </div>
+          </div>
+          <div class="" style="width: 100px; margin-left: 2%;
+                            margin-top: -5%; ">
+            <div class="img-area">
+              <img src="http://test.cacsicwacoaching.com//wp-content/uploads/2019/img/f7-47x47.jpg" alt="" width="60"
+                height="60" style="border-radius: 50%;
+                " />
+            </div>
+
+            <div class="text-left">
+              <div>Anjali Khanna</div>
+            </div>
+          </div>
+        </div>
+        <div class="single-testi">
+          <div class="img-text" style="padding: 8%; text-align: left;">
+            <div class="testimonial-quote">
+              My expectations were to just pass the exam but my decision of taking coaching from Wisdom Academy has been&nbsp;the&nbsp;best decision.
+              Their&nbsp;faculties, support and the motivation which they provide&nbsp;are&nbsp;the best of all. If anyone who is looking for good rank result and study oriented coaching this could be your best...
+            </div>
+            <div>
+              <div>
+                <span class="testimonial-pair-left">Level:</span>
+                <span>ICWA INTER</span>
+              </div>
+              <div>
+                <span class="testimonial-pair-left">Attempt:</span>
+                <span> ICWA INTER June 18</span>
+              </div>
+
+              <div>
+                <span class="testimonial-pair-left">Result:</span>
+                <span>
+                  <br />
+                  Rank 62
+                </span>
+              </div>
+            </div>
+          </div>
+          <div class="" style="width: 100px; margin-left: 2%;
+                            margin-top: -5%; ">
+            <div class="img-area">
+              <img src="http://test.cacsicwacoaching.com//wp-content/uploads/2019/img/rink-47x47.jpg" alt="" width="60"
+                height="60" style="border-radius: 50%;
+                " />
+            </div>
+
+            <div class="text-left">
+              <div> Deepali Patil</div>
+            </div>
+          </div>
+        </div>
+        <div class="single-testi">
+          <div class="img-text" style="padding: 8%; text-align: left;">
+            <div class="testimonial-quote">
+              Wisdom Academy is one of the best learning centers known for providing real opportunity to learn and grow. There is strong bonding between the students and teachers that helps to create a good learning environment. I am satisfied with their academic schedules which helped me to learn a lot.
+            </div>
+            <div>
+              <div>
+                <span class="testimonial-pair-left">Level:</span>
+                <span>ICWA INTER</span>
+              </div>
+              <div>
+                <span class="testimonial-pair-left">Attempt:</span>
+                <span> ICWA INTER June 18</span>
+              </div>
+
+              <div>
+                <span class="testimonial-pair-left">Result:</span>
+                <span>
+                  <br />
+                  Rank 85 (Highest marks in Accounts 72/100)
+                </span>
+              </div>
+            </div>
+          </div>
+          <div class="" style="width: 100px; margin-left: 2%;
+                            margin-top: -5%; ">
+            <div class="img-area">
+              <img src="http://test.cacsicwacoaching.com//wp-content/uploads/2019/img/amit-patil-47x47.jpg" alt="" width="60"
+                height="60" style="border-radius: 50%;
+                " />
+            </div>
+
+            <div class="text-left">
+              <div>Naresh Kumar</div>
+            </div>
+          </div>
+        </div>
+        <div class="single-testi">
+          <div class="img-text" style="padding: 8%; text-align: left;">
+            <div class="testimonial-quote">
+              I feel lucky to have found Wisdom Academy for their classes. Class presentation were very useful with bullet points and was easy to understand as it helped me absorb the concepts as they spoke.
+            </div>
+            <div>
+              <div>
+                <span class="testimonial-pair-left">Level:</span>
+                <span>ICWA FOUNDATION</span>
+              </div>
+              <div>
+                <span class="testimonial-pair-left">Attempt:</span>
+                <span> ICWA Foundation Dec 2017</span>
+              </div>
+
+              <div>
+                <span class="testimonial-pair-left">Result:</span>
+                <span>
+                  <br />
+                  Rank 89 (Highest Marks in Maths 75/100)
+                </span>
+              </div>
+            </div>
+          </div>
+          <div class="" style="width: 100px; margin-left: 2%;
+                            margin-top: -5%; ">
+            <div class="img-area">
+              <img src="http://test.cacsicwacoaching.com//wp-content/uploads/2019/img/sanj-47x47.jpg" alt="" width="60"
+                height="60" style="border-radius: 50%;
+                " />
+            </div>
+
+            <div class="text-left">
+              <div>Kanan Shrivastava</div>
+            </div>
+          </div>
+        </div>
+        <div class="single-testi">
+          <div class="img-text" style="padding: 8%; text-align: left;">
+            <div class="testimonial-quote">
+              I did not find this type of guidance and mentors in any other institute that I went to. this institute Faculty is the best Faculty across India, It's a place where u get all subjects under a roof ... With some of the best experienced teachers..
+            </div>
+            <div>
+              <div>
+                <span class="testimonial-pair-left">Level:</span>
+                <span>ICWA FOUNDATION</span>
+              </div>
+              <div>
+                <span class="testimonial-pair-left">Attempt:</span>
+                <span> ICWA Foundation June 2018</span>
+              </div>
+
+              <div>
+                <span class="testimonial-pair-left">Result:</span>
+                <span>
+                  <br />
+                  Rank 75 (Highest Marks in Accounts 80/100)
+                </span>
+              </div>
+            </div>
+          </div>
+          <div class="" style="width: 100px; margin-left: 2%;
+                            margin-top: -5%; ">
+            <div class="img-area">
+              <img src="http://test.cacsicwacoaching.com//wp-content/uploads/2019/img/sona-47x47.jpg" alt="" width="60"
+                height="60" style="border-radius: 50%;
+                " />
+            </div>
+
+            <div class="text-left">
+              <div>Priyanka jain</div>
+            </div>
+          </div>
+        </div>
+        <div class="single-testi">
+          <div class="img-text" style="padding: 8%; text-align: left;">
+            <div class="testimonial-quote">
+              Very Young and Dynamic Faculty. They have great equipment and infra in their classroom.
+              Each has teaching experience in some well known institutions of India. 
+              Now students aren't required to go to far in Mumbai to get quality coaching.
+            </div>
+            <div>
+              <div>
+                <span class="testimonial-pair-left">Level:</span>
+                <span> ICWA FOUNDATION</span>
+              </div>
+              <div>
+                <span class="testimonial-pair-left">Attempt:</span>
+                <span> ICWA Foundation June 2017</span>
+              </div>
+
+              <div>
+                <span class="testimonial-pair-left">Result:</span>
+                <span>
+                  <br />
+                  Rank 68
+                </span>
+              </div>
+            </div>
+          </div>
+          <div class="" style="width: 100px; margin-left: 2%;
+                            margin-top: -5%; ">
+            <div class="img-area">
+              <img src="http://test.cacsicwacoaching.com//wp-content/uploads/2019/img/f2-47x47.jpg" alt="" width="60"
+                height="60" style="border-radius: 50%;
+                " />
+            </div>
+
+            <div class="text-left">
+              <div> Reema Chaudhry</div>
+            </div>
+          </div>
+        </div>
+        <div class="single-testi">
+          <div class="img-text" style="padding: 8%; text-align: left;">
+            <div class="testimonial-quote">
+              This is a good news for students who will get the best guidance with such an experienced faculty. In this institution, teachers believe in perfection and concept clarity by heart. The infrastructure of this institution is good. I had a great experience.
+            </div>
+            <div>
+              <div>
+                <span class="testimonial-pair-left">Level:</span>
+                <span>CS PROFESSIONAL</span>
+              </div>
+              <div>
+                <span class="testimonial-pair-left">Attempt:</span>
+                <span>CS Professional June 2018</span>
+              </div>
+
+              <div>
+                <span class="testimonial-pair-left">Result:</span>
+                <span>
+                  <br />
+                  Highest Marks in Tax 83/100 <br>
+                  Highest Marks in Drafting 86/100
+                </span>
+              </div>
+            </div>
+          </div>
+          <div class="" style="width: 100px; margin-left: 2%;
+                            margin-top: -5%; ">
+            <div class="img-area">
+              <img src="http://test.cacsicwacoaching.com//wp-content/uploads/2019/img/f9-47x47.jpg" alt="" width="60"
+                height="60" style="border-radius: 50%;
+                " />
+            </div>
+
+            <div class="text-left">
+              <div>Vaibhavi Jadhav</div>
+            </div>
+          </div>
+        </div>
+        <div class="single-testi">
+          <div class="img-text" style="padding: 8%; text-align: left;">
+            <div class="testimonial-quote">
+              BEST FACULTY HAVING GREAT RESULTS IN CA CPT AND IN FOUNDATION ALL OVER DELHI VAIBHAV SIR FABULOUS LEARNING EXPERIENCE NEHA MAM LIFE CHANGING LESSONS FROM BOTH OF YOU I GREATLY RECOMMEND FOR CS Professional
+            </div>
+            <div>
+              <div>
+                <span class="testimonial-pair-left">Level:</span>
+                <span>CS PROFESSIONAL</span>
+              </div>
+              <div>
+                <span class="testimonial-pair-left">Attempt:</span>
+                <span> CS Professional June 2017</span>
+              </div>
+
+              <div>
+                <span class="testimonial-pair-left">Result:</span>
+                <span>
+                  <br />
+                  Highest Marks in FM 82/100 <br />
+                  Highest Marks in Tax 72/100
+                </span>
+              </div>
+            </div>
+          </div>
+          <div class="" style="width: 100px; margin-left: 2%;
+                            margin-top: -5%; ">
+            <div class="img-area">
+              <img src="http://test.cacsicwacoaching.com//wp-content/uploads/2019/img/f7-47x47.jpg" alt="" width="60"
+                height="60" style="border-radius: 50%;
+                " />
+            </div>
+
+            <div class="text-left">
+              <div>Simran Kaur</div>
+            </div>
+          </div>
+        </div>
+        <div class="single-testi">
+          <div class="img-text" style="padding: 8%; text-align: left;">
+            <div class="testimonial-quote">
+              One of the best faculty in CA education. They not only give you knowledge but motivates you to pursue your dreams and one of the most important things taught here is how to be a good human being.
+            </div>
+            <div>
+              <div>
+                <span class="testimonial-pair-left">Level:</span>
+                <span>CS PROFESSIONAL</span>
+              </div>
+              <div>
+                <span class="testimonial-pair-left">Attempt:</span>
+                <span> CS Professional Dec 2017</span>
+              </div>
+
+              <div>
+                <span class="testimonial-pair-left">Result:</span>
+                <span>
+                  <br />
+                  79 Highest Marks in FM 89/100 <br />
+                  Highest Marks in CRI 78/100
+                </span>
+              </div>
+            </div>
+          </div>
+          <div class="" style="width: 100px; margin-left: 2%;
+                            margin-top: -5%; ">
+            <div class="img-area">
+              <img src="http://test.cacsicwacoaching.com//wp-content/uploads/2019/img/m6-47x47.jpg" alt="" width="60"
+                height="60" style="border-radius: 50%;
+                " />
+            </div>
+
+            <div class="text-left">
+              <div>Poorav Singh</div>
+            </div>
+          </div>
+        </div>
+      
+      <div class="single-testi">
+        <div class="img-text" style="padding: 8%; text-align: left;">
+          <div class="testimonial-quote">
+            Knowledge of practical knowedge as well as syllabus is excellent. Infrastructure is very well, staff is also very polite. 
+          </div>
+          <div>
+            <div>
+              <span class="testimonial-pair-left">Level:</span>
+              <span>CA CPT</span>
+            </div>
+            <div>
+              <span class="testimonial-pair-left">Attempt:</span>
+              <span> CPT Dec 2017</span>
+            </div>
+
+            <div>
+              <span class="testimonial-pair-left">Result:</span>
+              <span>
+                <br />
+                Rank 53
+              </span>
+            </div>
+          </div>
+        </div>
+        <div class="" style="width: 100px; margin-left: 2%;
+                            margin-top: -5%; ">
+          <div class="img-area">
+            <img src="http://test.cacsicwacoaching.com//wp-content/uploads/2019/img/m8-47x47.jpe" alt="" width="60"
+              height="60" style="border-radius: 50%;
+                " />
+          </div>
+
+          <div class="text-left">
+            <div>Rahul Poojari</div>
+          </div>
+        </div>
+      </div>
+      <div class="single-testi">
+        <div class="img-text" style="padding: 8%; text-align: left;">
+          <div class="testimonial-quote">
+            One of the best teachers in CA - CPT  - no doubt about that - Be it Methdology or  Regular Tests or Calculator tricks  -Everything is perfect - I got 68 Rank without any extra efforts - Must go for it
+          </div>
+          <div>
+            <div>
+              <span class="testimonial-pair-left">Level:</span>
+              <span>CA CPT</span>
+            </div>
+            <div>
+              <span class="testimonial-pair-left">Attempt:</span>
+              <span> CA Foundation May 2018</span>
+            </div>
+
+            <div>
+              <span class="testimonial-pair-left">Result:</span>
+              <span>
+                <br />
+                Rank 68
+              </span>
+            </div>
+          </div>
+        </div>
+        <div class="" style="width: 100px; margin-left: 2%;
+                            margin-top: -5%; ">
+          <div class="img-area">
+            <img src="http://test.cacsicwacoaching.com//wp-content/uploads/2019/img/f6-47x47.jpg" alt="" width="60"
+              height="60" style="border-radius: 50%;
+                " />
+          </div>
+
+          <div class="text-left">
+            <div>Priti Rana</div>
+          </div>
+        </div>
+      </div>
+      <div class="single-testi">
+        <div class="img-text" style="padding: 8%; text-align: left;">
+          <div class="testimonial-quote">
+            It is the best place for CA-IPCC by Wisdom. Wisdom Academy is not just an institute, it is a family.
+          </div>
+          <div>
+            <div>
+              <span class="testimonial-pair-left">Level:</span>
+              <span>CA IPCC</span>
+            </div>
+            <div>
+              <span class="testimonial-pair-left">Attempt:</span>
+              <span> CA INTER May 2018</span>
+            </div>
+
+            <div>
+              <span class="testimonial-pair-left">Result:</span>
+              <span>
+                <br />
+                Costing 75/100 Accounts 65/100 Advanced Accounts 71/100
+              </span>
+            </div>
+          </div>
+        </div>
+        <div class="" style="width: 100px; margin-left: 2%;
+                            margin-top: -5%; ">
+          <div class="img-area">
+            <img src="http://test.cacsicwacoaching.com//wp-content/uploads/2019/img/15-47x47.jpg" alt="" width="60"
+              height="60" style="border-radius: 50%;
+                " />
+          </div>
+
+          <div class="text-left">
+            <div>Arjun Kumar</div>
+          </div>
+        </div>
+      </div>
+      <div class="single-testi">
+        <div class="img-text" style="padding: 8%; text-align: left;">
+          <div class="testimonial-quote">
+            You can't find better place for ca and ipcc coaching.
+            TEACHERS here came from heaven for sake of CA students.
+            Proud to be studied here.
+          </div>
+          <div>
+            <div>
+              <span class="testimonial-pair-left">Level:</span>
+              <span>CA IPCC</span>
+            </div>
+            <div>
+              <span class="testimonial-pair-left">Attempt:</span>
+              <span> CA IPCC May 2017</span>
+            </div>
+
+            <div>
+              <span class="testimonial-pair-left">Result:</span>
+              <span>
+                <br />
+                Rank 72 (Highest Marks in taxation 85/100)
+              </span>
+            </div>
+          </div>
+        </div>
+        <div class="" style="width: 100px; margin-left: 2%;
+                            margin-top: -5%; ">
+          <div class="img-area">
+            <img src="http://test.cacsicwacoaching.com//wp-content/uploads/2019/img/f10-47x47.jpg" alt="" width="60"
+              height="60" style="border-radius: 50%;
+                " />
+          </div>
+
+          <div class="text-left">
+            <div>Shrishti Chaudhry</div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+  </div></div>
+
+  <div class="container" style="padding-top:3em; margin-top: 5rem;" id="courses">
+    <div class="row" style="
+    margin-top: 2rem;
+    margin-bottom: 2rem;
+">
+      <div class="col-md-12 text-center" style="margin-top:2rem;margin-bottom: 3rem;">
+        <h2 style="color: #6b6b6b;">COURSES OFFERED BY US!</h2>
+      </div>
+    </div>
+
+    <div class="row" style="text-align: center;">
+      <div class="col-sm-4 col-md-4 zoom" href="#">
+        <!-- <a
+          href="https://ibigcsehometuition.com/courses/igcse-coaching-classes-home-tutors-in-andheri-borivali-mumbai/"
+          target="_self"
+        > -->
+        <img alt="ICAI" src="http://test.cacsicwacoaching.com//wp-content/uploads/2019/img/ca-india-logo.jpg"
+          height="136px" style=" opacity: 0.8;" />
+        <!-- </a> -->
+        <span>
+          <h3 style="margin-top: 2rem
+                    ;">
+            ICAI
+          </h3>
+          <p>Chartered Accountancy</p>
+          <!-- <a
+            class="qbutton no_fill"
+            href="https://ibigcsehometuition.com/courses/igcse-coaching-classes-home-tutors-in-andheri-borivali-mumbai/"
+            target="_self"
+            >Know More..</a
+          > -->
+        </span>
+      </div>
+
+      <div class=" col-sm-4 col-md-4 zoom">
+        <!-- <a
+          href="https://ibigcsehometuition.com/courses/igcse-coaching-classes-home-tutors-in-andheri-borivali-mumbai/"
+          target="_self"
+          > -->
+        <img alt="ICSI" src="http://test.cacsicwacoaching.com//wp-content/uploads/2019/img/icsi.preview.png"
+          height="136px" style=" opacity: 0.8;" />
+
+        <!-- </a> -->
+
+        <span>
+          <h3 style="margin-top: 2rem
+                    ;">
+            ICSI
+          </h3>
+          <p>Company Secretary</p>
+          <!-- <a
+            class="qbutton no_fill"
+            href="https://ibigcsehometuition.com/courses/international-baccalaureate-coaching-classes-certified-ib-home-tutors-in-mumbai"
+            target="_self"
+            >Know More..</a
+          > -->
+        </span>
+      </div>
+
+      <div class="col-sm-4 col-md-4 zoom">
+        <!-- <a
+          href="https://ibigcsehometuition.com/courses/igcse-coaching-classes-home-tutors-in-andheri-borivali-mumbai/"
+          target="_self"
+          >
+           -->
+        <img alt="CMA" src="http://test.cacsicwacoaching.com//wp-content/uploads/2019/img/icwa-logo.png"
+         width="150px" height="136px" style=" opacity: 0.8;" />
+
+        <!-- </a> -->
+
+        <span>
+          <h3 style="margin-top: 2rem
+                    ;">
+            ICWA
+          </h3>
+          <p>Cost Accountant</p>
+          <!-- <a
+            class="qbutton no_fill"
+            href="https://ibigcsehometuition.com/courses/alevel/"
+            target="_self"
+            >Know More..</a
+          > -->
+        </span>
+      </div>
+    </div>
+  </div>
+  <div class="container">
+    <div class="row" style="
+    margin-bottom: 2.5rem;
+    margin-top: 2.5rem;
+">
+      <div class="col-md-12 text-center" style="
+              
+              margin-top: 5rem;
+          ">
+        <h2 style="color: #6b6b6b;">Why avail Tuitions from Wisdom Academy?</h2>
+      </div>
+    </div>
+
+    <div class="row" style="
+          /* padding: 2rem; */
+      ">
+      <div class="col-md-8 " style="
+          padding: 4rem;
+      ">
+        <div class="row">
+          <div class="col-md-6 col-sm-12">
+            <div class="d-flex">
+              <div class="icon"><i class="fa fa-users"></i></div>
+              <div class="content">
+                <h3>Group tuitions in Small Batches</h3>
+              </div>
+            </div>
+          </div>
+          <div class="bright-feature-item col-md-6 col-sm-12">
+            <div class="d-flex">
+              <div class="icon"><i class="fa fa-object-ungroup"></i></div>
+              <div class="content">
+                <h3>Focus on clear understanding of all papers</h3>
+              </div>
+            </div>
+          </div>
+          <div class="bright-feature-item col-md-6 col-sm-12">
+            <div class="d-flex">
+              <div class="icon"><i class="fa fa-magic"></i></div>
+              <div class="content">
+                <h3>Revision/doubt sessions/test series.</h3>
+              </div>
+            </div>
+          </div>
+          <div class="bright-feature-item col-md-6 col-sm-12">
+            <div class="d-flex">
+              <div class="icon"><i class="fa fa-trophy"></i></div>
+              <div class="content">
+                <h3>Experienced, CA / CS / ICWA Experts</h3>
+              </div>
+            </div>
+          </div>
+
+          <div class="bright-feature-item col-md-6 col-sm-12">
+            <div class="d-flex">
+              <div class="icon"><i class="fa fa-pencil-square-o"></i></div>
+              <div class="content">
+                <h3>Regular Practice Sessions to brush up skills</h3>
+              </div>
+            </div>
+          </div>
+          <div class="bright-feature-item col-md-6 col-sm-12">
+            <div class="d-flex">
+              <div class="icon"><i class="fa fa-clone"></i></div>
+              <div class="content">
+                <h3>Flexible Timings for working professionals in the field of accountancy</h3>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <div class="col-md-4 zoom">
+        <img class="section-image" style="margin-top: 3rem;  "
+          src="http://test.cacsicwacoaching.com//wp-content/uploads/2019/img/CA-Inter.JPG" />
+      </div>
+    </div>
+  </div>
+  <div class="container section-image" style="
+     
+      padding-top: 4rem;
+      clear: both;
+      margin-bottom: 4rem;
+      color: #494E56;
+  ">
+    <div class="row ">
+      <div class="col-md-12 text-center">
+        <h2>OUR ACHIEVEMENTS</h2>
+        <p>
+          We have achieved a lot with the help of our students and aim to
+          achieve more.
+        </p>
+      </div>
+    </div>
+    <div class="row">
+      <div class="col-xs-offset-1 col-xs-6 col-sm-6 col-md-6 col-lg-6" style="padding: 4rem;">
+        <div>Chartered Accountant</div>
+        <div class="progress">
+          <div class="progress-bar" role="progressbar" aria-valuenow="60" aria-valuemin="0" aria-valuemax="100"
+            style="max-width: 68%">
+            <span class="title">68%</span>
+          </div>
+        </div>
+        <div style="
+      margin-top: 1rem;
+  ">
+          Company Secretary
+        </div>
+        <div class="progress">
+          <!-- <div></div> -->
+          <div class="progress-bar" role="progressbar" aria-valuenow="60" aria-valuemin="0" aria-valuemax="100"
+            style="max-width: 74%">
+            <span class="title">74%</span>
+          </div>
+        </div>
+        <div style="
+      margin-top: 1rem;
+  ">
+          Cost Accountant
+        </div>
+        <div class="progress">
+          <div class="progress-bar" role="progressbar" aria-valuenow="60" aria-valuemin="0" aria-valuemax="100"
+            style="max-width: 69%">
+            <span class="title">69%</span>
+          </div>
+        </div>
+      </div>
+      <div class=" col-xs-4 col-sm-4 col-md-4 col-lg-4 fh5co-counters text-center " style="padding: 3rem;">
+        <div style="font-size: 3rem;">
+          3574
+        </div>
+        <!-- <span class="fh5co-counter-label" style="color: black;">OUR STUDENTS</span> -->
+        <div>Students have come out with flying colours and enabling more..</div>
+      </div>
+    </div>
+  </div>
+
+  <div class="img-container"
+    style="background-image: url(https://www.oltify.com/wp-content/uploads/2019/11/ptrn.jpg);height: 500px;">
+    <div class="inner-container">
+      <p class="feature-text center white">
+        Contact us for your specific Home / Group Tuition need..
+      </p>
+      <a href="/contact" class="button no-padding w-inline-block">
+        <div class="bold-text">Drop us a Message</div>
+      </a>
+    </div>
+  </div>
+
+  <!-- footer-start-->
+  <div class="section footer">
+    <div class="footer-div">
+      <div class="footer-list">
+        <div class="footer-header">
+          <img src="http://test.cacsicwacoaching.com//wp-content/uploads/2019/img/walog.png" />
+        </div>
+        <a href="/about" class="footer-link w-inline-block">
+          <div>About</div>
+        </a><a href="#courses" class="footer-link w-inline-block">
+          <div>Courses</div>
+        </a><a href="#courses" class="footer-link w-inline-block">
+          <div>IB</div>
+        </a><a href="#courses" class="footer-link w-inline-block">
+          <div>IGCSE</div>
+        </a>
+        <a href="#courses" class="footer-link w-inline-block">
+          <div>A Level</div>
+        </a>
+        <a href="#testimonials" class="footer-link w-inline-block">
+          <div>Testimonials</div>
+        </a><a href="/contact" class="footer-link w-inline-block">
+          <div>Contact Us</div>
+        </a>
+      </div>
+      <div class="footer-list">
+        <div class="footer-header">Follow us on</div>
+        <a href="https://www.facebook.com/wisdomacademyIndia1/" target="_blank" class="footer-link w-inline-block">
+          <div>Facebook</div>
+        </a><a href="https://www.instagram.com/wisdomacademy4488/" target="_blank" class="footer-link w-inline-block">
+          <div>Instagram</div>
+        </a>
+        <a href="https://www.linkedin.com/company/wisdom-academy1/" target="_blank" class="footer-link w-inline-block">
+          <div>LinkedIn</div>
+        </a><a href="https://twitter.com/WisdomAcademy5" target="_blank" class="footer-link w-inline-block">
+          <div>Twitter</div>
+        </a>
+      </div>
+    </div>
+    <div class="body-copy footnote">
+      Copyright © 2019 Wisdom Academy - All rights reserved
+    </div>
+  </div>
+
+  <!-- Optional JavaScript -->
+  <!-- jQuery first, then Popper.js, then Bootstrap JS -->
+  <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js"
+    integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo"
+    crossorigin="anonymous"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js"
+    integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1"
+    crossorigin="anonymous"></script>
+  <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js"
+    integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM"
+    crossorigin="anonymous"></script>
+
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/owl.carousel.min.js"></script>
+
+  <script>
+    $(".testimonial-carousel").owlCarousel({
+      loop: true,
+      margin: 20,
+      autoHeight: true,
+    onInitialized: setOwlStageHeight,
+    onResized: setOwlStageHeight,
+    onTranslated: setOwlStageHeight,
+      autoplay: false,
+      responsiveClass: true,
+      responsive: {
+        0: {
+          items: 1
+        },
+        600: {
+          items: 2
+        }
+      },  
+      slideBy: 2
+    });
+
+    function setOwlStageHeight(event) {
+    var maxHeight = 0;
+    $('.owl-item.active').each(function () { // LOOP THROUGH ACTIVE ITEMS
+        var thisHeight = parseInt( $(this).height() );
+        maxHeight=(maxHeight>=thisHeight?maxHeight:thisHeight);
+    });
+    $('.owl-carousel').css('height', maxHeight );
+    $('.owl-stage-outer').css('height', maxHeight ); // CORRECT DRAG-AREA SO BUTTONS ARE CLICKABLE
+}
+  </script>
+</body>
